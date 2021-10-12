@@ -1,0 +1,31 @@
+
+programa {
+	funcao inicio() {
+		inteiro codigo, valor, quantidade, valortotal, opcao
+		
+		escreva("====================\n")
+		escreva("     Bem-vindo\n")
+		escreva("====================\n")
+		
+		escreva("Temos as seguintes opções de peças: \n")
+		escreva("1. Camisa branca - R$ 10,00\n")
+		escreva("2. Moletom preto - R$ 12,00\n")
+		escreva("3. Calça jeans - R$ 15,00\n")
+		escreva("Escolha uma opção: \n")
+		leia(opcao)
+		limpa()
+		
+		escreva("Digite o código da peça\n")
+		leia(codigo)
+		limpa()
+		escreva("Diga o valor da peça\n")
+		leia(valor)
+		limpa()
+		escreva("Diga a quantidade de peças\n")
+		leia(quantidade)
+		limpa()
+		valortotal = quantidade * valor
+	    escreva("O código da peça é: \n", codigo)
+	    escreva("\nO valor total é: ", valortotal)
+	}
+}
