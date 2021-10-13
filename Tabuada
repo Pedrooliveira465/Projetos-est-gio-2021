@@ -1,0 +1,27 @@
+programa {
+	funcao inicio() {
+		inteiro n1
+		
+		escreva("Digite um número: \n")
+		leia(n1)
+		escreva("A tabuada é: \n")
+		escreva(LeNumero (n1),"\n")
+		escreva(LeNumero (n1 * 2),"\n")
+		escreva(LeNumero (n1 * 3),"\n")
+		escreva(LeNumero (n1 * 4),"\n")
+		escreva(LeNumero (n1 * 5),"\n")
+		escreva(LeNumero (n1 * 6),"\n")
+		escreva(LeNumero (n1 * 7),"\n")
+		escreva(LeNumero (n1 * 8),"\n")
+		escreva(LeNumero (n1 * 9),"\n")
+		escreva(LeNumero (n1 * 10),"\n")
+		
+	}
+	funcao inteiro LeNumero(inteiro n1){
+	    inteiro n2, resultado
+	    n2 = 1
+	    resultado = n1 * n2
+	    retorne resultado
+	    
+	}
+}
