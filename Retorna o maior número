@@ -12,14 +12,15 @@ programa {
 	    
 	    se(n1 > n2){
 	        escreva("O número maior é: " )
-            retorne n1
+                retorne n1
 	    }
 	    senao se(n2 > n1){
 	        escreva("O número maior é: " )
 	        retorne n2
 	    }
 	    senao se(n1 == n2){
-	        escreva("Os números são iguais \n")
+	        escreva("O numero retornado é: ")
+	        retorne n1
 	    }
 	    retorne 0
 }
