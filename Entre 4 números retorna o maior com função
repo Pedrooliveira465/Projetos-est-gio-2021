@@ -1,1 +1,34 @@
-
+programa {
+	funcao inicio() {
+		inteiro a, b, c, d
+		
+		escreva("Digite o primeiro número: \n")
+		leia(a)
+		escreva("Digite o segundo número: \n")
+		leia(b)
+		escreva("Digite o terceiro número: \n")
+		leia(c)
+		escreva("Digite o quarto número: \n")
+		leia(d)
+		escreva(MAX(a, b, c, d))
+	}
+	funcao inteiro MAX(inteiro a, inteiro b, inteiro c, inteiro d){
+	    se((a > b ) e (a > c) e (a > d)){
+	        escreva("O maior número é: ")
+	        retorne a
+	    }
+	    senao se((b > a) e (b > c) e (b > d)){
+	        escreva("O maior número é: ")
+	        retorne b
+	    }
+	    senao se((c > a) e (c > b) e (c > d)){
+	        escreva("O maior número é: ")
+	        retorne c
+	    }
+	    senao se((d > a) e (d > b) e (d > c)){
+	        escreva("O maior número é: ")
+	        retorne d
+	    }
+	    retorne 0
+}
+}
