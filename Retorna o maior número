@@ -1,0 +1,26 @@
+programa {
+	funcao inicio() {
+		inteiro n1, n2
+		
+		escreva("Digite um número: \n")
+		leia(n1)
+		escreva("Digite o segundo número: \n")
+		leia(n2)
+		escreva(MAX(n1, n2))
+	}
+	funcao inteiro MAX(inteiro n1, inteiro n2){
+	    
+	    se(n1 > n2){
+	        escreva("O número maior é: " )
+            retorne n1
+	    }
+	    senao se(n2 > n1){
+	        escreva("O número maior é: " )
+	        retorne n2
+	    }
+	    senao se(n1 == n2){
+	        escreva("Os números são iguais \n")
+	    }
+	    retorne 0
+}
+}
