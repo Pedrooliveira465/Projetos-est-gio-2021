@@ -1,0 +1,285 @@
+programa {
+	funcao inicio() {
+		inteiro opcao = 0, opcaoPaga = 0, opcao4 = 0, senha, cep
+		cadeia opcao2, opcao3 = " ", nome, email, email2 = "@gmail.com", parceiro = " ", parceiro1
+		
+		
+		escreva("=========================\n")
+		escreva("       Bem-vindo\n")
+		escreva("==========================\n")
+		escreva("Você já tem cadastro? (s/n): ")
+		leia(opcao2)
+		  se(opcao2 == "n"){
+		        escreva("Você deseja fazer um cadastro? (s/n): ")
+		        leia(opcao3)
+		             se(opcao3 == "s"){
+		                escreva("Você deseja se tornar parceiro? (s/n) \n")
+		                leia(parceiro)
+		                    se(parceiro == "s"){
+		                        escreva("Digite o seu nome: \n")
+		                        leia(nome)
+		                        escreva("Digite a sua senha: \n")
+		                        leia(senha)
+		                        escreva("Digite o seu cep: \n")
+		                        leia(cep)
+		                    }
+		                    senao se(parceiro == "n"){
+		                        escreva("Faça seu cadastro normal: \n")
+		                        escreva("Digite o seu nome: \n")
+		                        leia(nome)
+		                        escreva("Digite o seu email: \n")
+		                        leia(email)
+		                        email = email + email2
+		                        escreva("Digite o seu cep: \n")
+		                        leia(cep)
+		                    }
+		                }
+		  }
+		                            se(opcao3 == "n"){
+	                                limpa()
+	    	                            escreva("Temos as seguintes opções de roupas: \n")
+		                                escreva("1. Blusa preta/branca - R$ 10,00\n")
+		                                escreva("2. Blusa vermelha em promoção - R$ 5,00\n")
+		                                escreva("3. Calça jeans preta/branca - R$ 12,00\n")
+		                                escreva("4. Calça moletom em promoção - R$ 6,00\n")
+		                                escreva("5. Moletom preta/branca - R$ 15,00\n")
+		                                escreva("6. Cordão de ouro - R$ 5,00\n")
+		                                escreva("Escolha uma opção: ")
+		                                leia(opcao)
+		                            }
+		                                se(opcao == 1){
+		                                limpa()
+		                                    escreva("Temos as seguintes opções de pagamento: \n")
+		                                    escreva("1. Pix\n")
+		                                    escreva("2. Cartão\n")
+		                                    escreva("3. Em dinheiro\n")
+		                                    escreva("Escolha uma opção: ")
+		                                    leia(opcao)
+		                                    escreva("Compra realizada, aproveite a blusa de R$ 10,00\n")
+		                                    escreva("(Resta mais 10 blusas)")
+		                                }
+		                                senao se(opcao == 2){
+		                                limpa()
+		                                    escreva("Temos as seguintes opções de pagamento: \n")
+		                                    escreva("1. Pix\n")
+		                                    escreva("2. Cartão\n")
+		                                    escreva("3. Em dinheiro\n")
+		                                    escreva("Escolha uma opção: ")
+		                                    leia(opcao)
+		                                    escreva("Compra realizada, aproveite a blusa de R$ 5,00\n")
+		                                    escreva("(Resta mais 5 blusa vermelha)")
+		                                }
+		                                senao se(opcao == 3){
+		                                limpa()
+		                                    escreva("Temos as seguintes opções de pagamento: \n")
+		                                    escreva("1. Pix\n")
+		                                    escreva("2. Cartão\n")
+		                                    escreva("3. Em dinheiro\n")
+		                                    escreva("(Escolha uma opção: )")
+		                                    leia(opcao)
+		                                    escreva("Compra realizada, aproveite a calça jeans de R$ 12,00\n")
+		                                    escreva("(Resta 8 calça jeans)")
+		                                }
+		                                senao se(opcao == 4){
+		                                limpa()
+		                                    escreva("Temos as seguintes opções de pagamento: \n")
+		                                    escreva("1. Pix\n")
+		                                    escreva("2. Cartão\n")
+		                                    escreva("3. Em dinheiro\n")
+		                                    escreva("Escolha uma opção: ")
+		                                    leia(opcao)
+		                                    escreva("Compra realizada, aproveite a calça moletom R$ 6,00\n")
+		                                    escreva("(Resta 3 calça moletom)")
+		                                }
+		                                senao se(opcao == 5){
+		                                limpa()
+		                                    escreva("Temos as seguintes opções de pagamento: \n")
+		                                    escreva("1. Pix\n")
+		                                    escreva("2. Cartão\n")
+		                                    escreva("3. Em dinheiro\n")
+		                                    escreva("Escolha uma opção: ")
+		                                    leia(opcao)
+		                                    escreva("Compra realizada, aproveite o moletom R$ 15,00\n")
+		                                    escreva("(Resta 3 calça moletom)")
+		                                }
+		                                senao se(opcao == 6){
+		                                limpa()
+		                                    escreva("Temos as seguintes opções de pagamento: \n")
+		                                    escreva("1. Pix\n")
+		                                    escreva("2. Cartão\n")
+		                                    escreva("3. Em dinheiro\n")
+		                                    escreva("Escolha uma opção: ")
+		                                    leia(opcao)
+		                                    escreva("Compra realizada, aproveite o cordão de ouro R$ 5,00\n")
+		                                    escreva("(Resta 9 cordões de ouro)")
+		                                 }
+	//OPÇÃO 2 SIM PRA PARCEIRO
+		                                    se(opcao2 == "s"){
+		                                    limpa()
+		                                        escreva("Você é parceiro? (s/n) \n")
+		                                        leia(parceiro)
+		                                            se(parceiro == "s"){
+		                                                escreva("Vc n paga nd, pode escolher qualquer coisa:  \n")
+		                                                escreva("Temos as seguintes opções de roupas: \n")
+		                                                escreva("1. Blusa preta/branca - Grátis \n")
+		                                                escreva("2. Blusa vermelha em promoção - Grátis \n")
+		                                                escreva("3. Calça jeans preta/branca - Grátis \n")
+		                                                escreva("4. Calça moletom em promoção - Grátis \n")
+		                                                escreva("5. Moletom preta/branca - Grátis \n")
+		                                                escreva("6. Cordão de ouro - Grátis \n")
+		                                                escreva("Escolha uma opção: ")
+		                                                leia(opcao)
+		                                            }
+		                                            senao se(parceiro == "n"){
+		                	                            escreva("Temos as seguintes opções de roupas: \n")
+		                                                escreva("1. Blusa preta/branca - R$ 5,00\n")
+		                                                escreva("2. Blusa vermelha em promoção - R$ 2,00\n")
+		                                                escreva("3. Calça jeans preta/branca - R$ 6,00\n")
+		                                                escreva("4. Calça moletom em promoção - R$ 3,00\n")
+		                                                escreva("5. Moletom preta/branca - R$ 10,00\n")
+		                                                escreva("6. Cordão de ouro - R$ 1,00\n")
+		                                                escreva("Escolha uma opção: ")
+		                                                leia(opcao)
+		                                             }
+		            
+		                                                se(opcao == 1){
+		                                                limpa()
+		                                                    escreva("Temos as seguintes opções de pagamento: \n")
+		                                                    escreva("1. Pix\n")
+		                                                    escreva("2. Cartão\n")
+		                                                    escreva("3. Sou parceiro\n")
+                        		                            escreva("Escolha uma opção: ")
+		                                                    leia(opcaoPaga)
+		                                                        se(opcaoPaga == 1){
+		                                                            escreva("Compra realizada, aproveite a blusa de R$ - 5,00 \n")
+		                                                            escreva("(Resta mais 10 blusas\n")
+		                                                        }
+		                                                        senao se(opcaoPaga == 2){
+		                                                            escreva("Compra realizada, aproveite a blusa de R$ - 5,00 \n")
+		                                                            escreva("(Resta mais 10 blusas)\n")
+		                                                        }
+		                                                        senao se(opcaoPaga == 3){
+		                                                            escreva("Digite sua senha: \n")
+		                                                            leia(senha)
+		                                                            escreva("Compra realizada, aproveite a blusa \n")
+		                                                            escreva("(Resta mais 10 blusas)\n")
+		                                                         }
+		                                                        }
+		                                                            senao se(opcao == 2){
+		                                                            limpa()
+		                                                                escreva("Temos as seguintes opções de pagamento: \n")
+		                                                                escreva("1. Pix\n")
+		                                                                escreva("2. Cartão\n")
+		                                                                escreva("3. Sou parceiro\n")
+		                                                                escreva("Escolha uma opção: ")
+		                                                                leia(opcaoPaga)
+		                                                                    se(opcaoPaga == 1){
+		                                                                        escreva("Compra realizada, aproveite a blusa vermelha de R$ - 2,00 \n")
+		                                                                        escreva("(Resta mais 5 blusas\n")
+		                                                                    }
+		                                                                    senao se(opcaoPaga == 2){
+		                                                                        escreva("Compra realizada, aproveite a blusa vermelha de R$ - 2,00 \n")
+		                                                                        escreva("(Resta mais 5 blusas)\n")
+		                                                                    }
+		                                                                    senao se(opcaoPaga == 3){
+		                                                                    escreva("Digite sua senha: \n")
+		                                                                    leia(senha)
+		                                                                    escreva("Compra realizada, aproveite a blusa vermelha \n")
+		                                                                    escreva("(Resta mais 5 blusas)\n")
+		                                                                    }
+		                                                                }
+		                                                                    senao se(opcao == 3){
+		                                                                    limpa()
+		                                                                        escreva("Temos as seguintes opções de pagamento: \n")
+		                                                                        escreva("1. Pix\n")
+		                                                                        escreva("2. Cartão\n")
+		                                                                        escreva("3. Sou parceiro\n")
+		                                                                        escreva("(Escolha uma opção: )")
+		                                                                        leia(opcaoPaga)
+		                                                                            se(opcaoPaga == 1){
+		                                                                                escreva("Compra realizada, aproveite a calça jeans de R$ - 6,00 \n")
+		                                                                                escreva("(Resta mais 8 calças jeans\n")
+		                                                                            }
+		                                                                            senao se(opcaoPaga == 2){
+		                                                                                escreva("Compra realizada, aproveite a calça jeans de R$ - 6,00 \n")
+		                                                                                escreva("(Resta mais 8 calças jeans)\n")
+		                                                                               }
+		                                                                            senao se(opcaoPaga == 3){
+		                                                                                escreva("Digite sua senha: \n")
+		                                                                                leia(senha)
+		                                                                                escreva("Compra realizada, aproveite a calça jeans \n")
+		                                                                                escreva("(Resta mais 8 blusas)\n")
+		                                                                            }
+		                                                                          }
+		                                                                            senao se(opcao == 4){
+		                                                                            limpa()
+		                                                                                escreva("Temos as seguintes opções de pagamento: \n")
+		                                                                                escreva("1. Pix\n")
+		                                                                                escreva("2. Cartão\n")
+		                                                                                escreva("3. Sou parceiro\n")
+		                                                                                escreva("Escolha uma opção: ")
+		                                                                                leia(opcaoPaga)
+		                                                                                    se(opcaoPaga == 1){
+		                                                                                    escreva("Compra realizada, aproveite a calça moletom de R$ - 3,00 \n")
+		                                                                                    escreva("(Resta mais 3 calça moletom\n")
+		                                                                                    }
+		                                                                                    senao se(opcaoPaga == 2){
+		                                                                                        escreva("Compra realizada, aproveite a calça moletom de R$ - 3,00 \n")
+		                                                                                        escreva("(Resta mais 3 calça moletom)\n")
+		                                                                                    }
+		                                                                                    senao se(opcaoPaga == 3){
+		                                                                                    escreva("Digite sua senha: \n")
+		                                                                                    leia(senha)
+		                                                                                    escreva("Compra realizada, aproveite a calça moletom \n")
+		                                                                                    escreva("(Resta mais 3 calça moletom)\n")
+		                                                                                    }
+		                                                                                  }
+		                                                                                    senao se(opcao == 5){
+		                                                                                    limpa()
+		                                                                                        escreva("Temos as seguintes opções de pagamento: \n")
+		                                                                                        escreva("1. Pix\n")
+		                                                                                        escreva("2. Cartão\n")
+		                                                                                        escreva("3. Sou parceiro\n")
+		                                                                                        escreva("Escolha uma opção: ")
+		                                                                                        leia(opcaoPaga)
+		                                                                                            se(opcaoPaga == 1){
+		                                                                                                escreva("Compra realizada, aproveite o moletom de R$ - 10,00 \n")
+		                                                                                                escreva("(Resta mais 5 moletom\n")
+		                                                                                            }
+		                                                                                            senao se(opcaoPaga == 2){
+		                                                                                                escreva("Compra realizada, aproveite a blusa de R$ - 10,00 \n")
+		                                                                                                escreva("(Resta mais 5 moletom)\n")
+		                                                                                            }
+		                                                                                            senao se(opcaoPaga == 3){
+		                                                                                                escreva("Digite sua senha: \n")
+		                                                                                                leia(senha)
+		                                                                                                escreva("Compra realizada, aproveite o moletom \n")
+		                                                                                                escreva("(Resta mais 5 moletom)\n")
+		                                                                                                }
+		                                                                                              }
+		                                                                                              senao se(opcao == 6){
+            		                                                                                  limpa()
+		                                                                                                escreva("Temos as seguintes opções de pagamento: \n")
+		                                                                                                escreva("1. Pix\n")
+		                                                                                                escreva("2. Cartão\n")
+		                                                                                                escreva("3. Sou parceiro\n")
+		                                                                                                escreva("Escolha uma opção: ")
+		                                                                                                leia(opcaoPaga)
+		                                                                                                    se(opcaoPaga == 1){
+		                                                                                                        escreva("Compra realizada, aproveite a blusa de R$ - 1,00 \n")
+		                                                                                                        escreva("(Resta mais 9 cordões de ouro\n")
+		                                                                                                    }
+		                                                                                                    senao se(opcaoPaga == 2){
+		                                                                                                        escreva("Compra realizada, aproveite a blusa de R$ - 1,00 \n")
+		                                                                                                        escreva("(Resta mais 9 cordões de ouro)\n")
+		                                                                                                    }
+		                                                                                                    senao se(opcaoPaga == 3){
+		                                                                                                        escreva("Digite sua senha: \n")
+		                                                                                                        leia(senha)
+		                                                                                                        escreva("Compra realizada, aproveite o cordão de ouro \n")
+		                                                                                                        escreva("(Resta mais 9 cordões ouro)\n")
+		                                                                                                    }
+		                    }
+		            }
+	}
+}
